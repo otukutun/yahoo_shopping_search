@@ -6,6 +6,7 @@ require 'yahoo_shopping_search/clients/base'
 require 'yahoo_shopping_search/clients/item'
 require 'yahoo_shopping_search/responses/base'
 require 'yahoo_shopping_search/responses/item'
+require 'yahoo_shopping_search/resources/item'
 
 module YahooShoppingSearch
   class BadRequestError < StandardError; end

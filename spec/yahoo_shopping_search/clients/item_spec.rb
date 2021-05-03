@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'active_support/all'
+require 'spec_helper'
 
 RSpec.describe YahooShoppingSearch::Clients::Item do
   let(:client) { YahooShoppingSearch::Clients::Item }
