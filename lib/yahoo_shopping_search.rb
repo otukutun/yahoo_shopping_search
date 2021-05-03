@@ -2,6 +2,10 @@
 
 require 'yahoo_shopping_search/version'
 require 'yahoo_shopping_search/config'
+require 'yahoo_shopping_search/clients/base'
+require 'yahoo_shopping_search/clients/item'
+require 'yahoo_shopping_search/responses/base'
+require 'yahoo_shopping_search/responses/item'
 
 module YahooShoppingSearch
   class BadRequestError < StandardError; end
