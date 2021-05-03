@@ -11,17 +11,15 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This is Yahoo Shopping Search API Wrapper}
   spec.description   = %q{This is minimum size wrapper for Yahoo Shopping Search API.}
-  spec.homepage      = "https://github.com/otukutun/yahoo-shopping-search"
+  spec.homepage      = "https://github.com/otukutun/yahoo_shopping_search"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://github.com/otukutun/yahoo-shopping-search"
-    spec.metadata["changelog_uri"] = "https://github.com/otukutun/yahoo-shopping-search/CHANGELOG.md"
+    spec.metadata["source_code_uri"] = "https://github.com/otukutun/yahoo_shopping_search"
+    spec.metadata["changelog_uri"] = "https://github.com/otukutun/yahoo_shopping_search/CHANGELOG.md"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
