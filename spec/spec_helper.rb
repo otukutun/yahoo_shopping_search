@@ -1,5 +1,6 @@
-require "bundler/setup"
-require "yahoo_shopping_search"
+require 'bundler/setup'
+require 'yahoo_shopping_search'
+require 'webmock/rspec'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
