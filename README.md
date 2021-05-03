@@ -2,8 +2,6 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yahoo_shopping_search`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -46,7 +44,7 @@ end
 ### Search Shopping Item
 
 ```ruby
-result = YahooShoppingSearch::Clients::Item.search(keyword: 'よなよなエール')
+result = YahooShoppingSearch::Clients::Item.search(query: 'よなよなエール')
 # Fetch data
 result.each { |item| p item }
 # if you want to go to next page
