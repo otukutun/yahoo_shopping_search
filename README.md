@@ -22,7 +22,37 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Preparation
+
+Before using this, Please get api key from [this](https://developer.yahoo.co.jp/start/).
+
+### API Detail
+
+If You want to know API detail, Please read [this](https://developer.yahoo.co.jp/webapi/shopping/shopping/v3/itemsearch.html).
+
+### Initialize app id and affiliate id
+
+You can initialize app id and affiliate id like a below code.
+
+```ruby
+YahooShoppingSearch.configure do |config|
+  config.app_id = 'YOUR APP ID' # required
+  config.affiliate_type = 'YOUR AFFILIATE TYPE' # optional
+  config.sid = 'YOUR AFFILIATE SID' # optional
+  config.pid = 'YOUR AFFILIATE PID' # optional
+end
+```
+
+### Search Shopping Item
+
+```ruby
+result = YahooShoppingSearch::Clients::Item.search(keyword: 'よなよなエール')
+# Fetch data
+result.each { |item| p item }
+# if you want to go to next page
+result.next_page!
+# if next_page doesn't exist, NextPageNotFound  Exception is raised.
+```
 
 ## Development
 
